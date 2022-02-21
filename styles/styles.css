@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-background: #0e0e0e;
+  --color-logo: #ff5b50;
+  --card-color: #252525;
+  --text-color: #fff;
+  --subtitle-color: #5a5757;
+  --black-text: #000;
+  --color-input: #0D0D0D;
+}
+
+body {
+  background-color: var(--body-background);
+  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+button, input {
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-image: url("../assets/background.png");
+  background-size: cover;
+}
+
+.header {
+  padding: 2rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.header__logo {
+  font-size: 2.5rem;
+}
+.header__logo span {
+  color: var(--color-logo);
+}
+.header__menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header__menu ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.header__btn-login {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--text-color);
+  border: 0;
+  padding: 0.2rem 1rem;
+  font-weight: bold;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.header__btn-login:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px var(--text-color);
+  color: var(--text-color);
+}
+
+.hero {
+  width: 100%;
+  padding: 0 5%;
+}
+.hero__top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hero__top-content {
+  max-width: 400px;
+}
+.hero__top-content p {
+  font-size: 1.125rem;
+}
+.hero__top-content > div {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__top-content > div .imgs ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero__top-content > div .imgs ul img {
+  width: 5.9875rem;
+  height: 5.375rem;
+  position: absolute;
+  transform: translateX(calc(var(--i) * 20px));
+}
+.hero__top h1 {
+  font-size: 3.125rem;
+}
+.hero__top h1 span {
+  color: var(--color-logo);
+}
+.hero__top img {
+  width: 180px;
+  height: 180px;
+}
+
+/*# sourceMappingURL=styles.css.map */
